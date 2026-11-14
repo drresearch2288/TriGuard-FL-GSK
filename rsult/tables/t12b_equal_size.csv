@@ -1,0 +1,21 @@
+ε,Method,Private?,Set size,Coverage,Worst-site cov.,Worst-class cov.
+1,DP-SCP (proposed),yes,5.00,0.953,0.913,0.876
+1,U2 FCP (Lu et al.),no,5.00,0.958,0.907,0.863
+1,"U5 DP FCP, exponential mechanism (Lu et al.)",yes,5.00,0.957,0.902,0.851
+1,U6 Per-class exponential mechanism,yes,5.00,0.787,0.735,0.749
+1,U7 DP-FedCP (Plassier et al.),yes,5.00,–,–,–
+3,DP-SCP (proposed),yes,3.98,0.949,0.911,0.850
+3,U2 FCP (Lu et al.),no,3.98,0.941,0.929,0.869
+3,"U5 DP FCP, exponential mechanism (Lu et al.)",yes,3.98,0.941,0.928,0.868
+3,U6 Per-class exponential mechanism,yes,3.98,0.834,0.803,0.788
+3,U7 DP-FedCP (Plassier et al.),yes,3.98,0.911,0.842,0.776
+8,DP-SCP (proposed),yes,3.43,0.941,0.900,0.892
+8,U2 FCP (Lu et al.),no,3.43,0.938,0.910,0.857
+8,"U5 DP FCP, exponential mechanism (Lu et al.)",yes,3.43,0.938,0.911,0.858
+8,U6 Per-class exponential mechanism,yes,3.43,0.880,0.846,0.850
+8,U7 DP-FedCP (Plassier et al.),yes,3.43,0.915,0.862,0.815
+∞,DP-SCP (proposed),yes,3.00,0.952,0.913,0.847
+∞,U2 FCP (Lu et al.),no,3.00,0.961,0.932,0.886
+∞,"U5 DP FCP, exponential mechanism (Lu et al.)",yes,3.00,0.961,0.932,0.886
+∞,U6 Per-class exponential mechanism,yes,3.00,0.947,0.896,0.860
+∞,U7 DP-FedCP (Plassier et al.),yes,3.00,0.959,0.925,0.899

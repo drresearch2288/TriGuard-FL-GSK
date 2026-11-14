@@ -1,0 +1,10 @@
+Variant,BA,Worst-site BA,Δ vs full
+Full TriGuard-FL,41.1 (n=1),38.4 (n=1),–
+A1 + random-effects aggregation,41.4 (n=1),36.1 (n=1),+0.2
+A2 + DP-gated private adapter / head,45.1 (n=1),31.3 (n=1),+4.0
+A3 frozen A (= B6 FFA-LoRA),39.0 (n=1),34.0 (n=1),-2.1
+A4 − augmented cache (K = 1),40.0 (n=1),37.5 (n=1),-1.1
+A5 ImageNet ViT-S instead of DINOv2,33.4 (n=1),27.1 (n=1),-7.8
+A6 BiomedCLIP ViT-B instead of DINOv2,30.5 (n=1),28.7 (n=1),-10.6
+"A7 plan design (private head + adapter at every site, RE)",45.8 (n=1),25.0 (n=1),+4.6
+"A8 TriGuard-D (RE + gated personalisation, frozen A)",42.6 (n=1),28.3 (n=1),+1.4

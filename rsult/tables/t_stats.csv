@@ -1,0 +1,5 @@
+ε,Best baseline,"ΔBA (pp, mean over seeds)",seeds,Wilcoxon p,"Bootstrap 95% CI (seed 0, pp)"
+1,B7 Personal LoRA + DP,-3.73,1,n<5,"[-5.89, -1.67]"
+3,B7 Personal LoRA + DP,-5.63,1,n<5,"[-8.49, -2.75]"
+8,B7 Personal LoRA + DP,-7.42,1,n<5,"[-10.30, -4.51]"
+∞,B7 Personal LoRA + DP,-2.86,1,n<5,"[-5.57, -0.14]"

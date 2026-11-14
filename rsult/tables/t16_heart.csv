@@ -1,0 +1,9 @@
+Method,ε,Mean AUC,Worst-hospital AUC,Coverage,Worst-site coverage
+DP-FedAvg (logistic regression) + local CP,1,0.893 ± 0.006 (n=5),0.828 ± 0.004 (n=5),0.944 ± 0.004 (n=5),0.910 ± 0.010 (n=5)
+DP-FedAvg (logistic regression) + local CP,3,0.898 ± 0.003 (n=5),0.829 ± 0.003 (n=5),0.947 ± 0.002 (n=5),0.914 ± 0.006 (n=5)
+DP-FedAvg (logistic regression) + local CP,8,0.898 ± 0.001 (n=5),0.827 ± 0.002 (n=5),0.947 ± 0.002 (n=5),0.915 ± 0.007 (n=5)
+DP-FedAvg (logistic regression) + local CP,∞,0.901 ± 0.001 (n=5),0.834 ± 0.001 (n=5),0.950 ± 0.004 (n=5),0.922 ± 0.009 (n=5)
+RE aggregation + DP-SCP (C2–C4),1,0.894 ± 0.006 (n=5),0.828 ± 0.006 (n=5),1.000 ± 0.000 (n=5),1.000 ± 0.000 (n=5)
+RE aggregation + DP-SCP (C2–C4),3,0.899 ± 0.003 (n=5),0.828 ± 0.003 (n=5),1.000 ± 0.000 (n=5),1.000 ± 0.000 (n=5)
+RE aggregation + DP-SCP (C2–C4),8,0.900 ± 0.001 (n=5),0.827 ± 0.002 (n=5),1.000 ± 0.000 (n=5),1.000 ± 0.000 (n=5)
+RE aggregation + DP-SCP (C2–C4),∞,0.901 ± 0.001 (n=5),0.834 ± 0.001 (n=5),0.986 ± 0.003 (n=5),0.981 ± 0.003 (n=5)

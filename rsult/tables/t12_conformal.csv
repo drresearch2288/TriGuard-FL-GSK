@@ -1,0 +1,10 @@
+Method,Private?,Marginal cov.,Worst-site cov.,Worst-class cov.,MEL cov.,Set size,P(cov ≥ 1−α),ECE,n
+U1 Local split CP,yes,0.903,0.841,0.791,0.807,3.18,0.85,0.102,1
+U2 FCP (Lu et al.),no,0.901,0.885,0.787,0.798,3.11,0.75,0.102,1
+U3 Naive DP histogram CP,yes,0.913,0.896,0.804,0.817,3.31,1.00,0.102,1
+U4 Label-shift FCP (Plassier et al.),no,0.902,0.886,0.789,0.811,3.19,0.75,0.102,1
+"U5 DP FCP, exponential mechanism (Lu et al.)",yes,0.902,0.886,0.789,0.799,3.13,0.85,0.102,1
+U6 Per-class exponential mechanism,yes,0.920,0.887,0.895,0.949,5.52,1.00,0.102,1
+U7 DP-FedCP (Plassier et al.),yes,0.959,0.921,0.867,0.931,5.12,1.00,0.102,1
+DP-SCP without shift check,yes,0.939,0.903,0.837,0.964,3.85,1.00,0.103,1
+DP-SCP (proposed),yes,0.947,0.904,0.856,0.967,4.01,1.00,0.103,1

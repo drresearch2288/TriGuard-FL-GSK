@@ -1,0 +1,377 @@
+{"id": "dl__heart", "rc": 0, "hours": 0.008396103183428446, "end": 1793786834.443642, "est_h": 0.0, "resource": "net"}
+{"id": "heart__dpfedavg_lr__eps1__s0", "rc": 0, "hours": 0.012682446373833551, "end": 1793786880.2914968, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps1__s1", "rc": 0, "hours": 0.012673624091678196, "end": 1793786880.2914968, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps1__s2", "rc": 0, "hours": 0.008389031887054444, "end": 1793786910.6934822, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps1__s3", "rc": 0, "hours": 0.012611827784114413, "end": 1793786925.911379, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps1__s4", "rc": 0, "hours": 0.008470004929436578, "end": 1793786941.3951757, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps3__s0", "rc": 0, "hours": 0.012672502795855205, "end": 1793786971.7940824, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps3__s1", "rc": 0, "hours": 0.012618644303745694, "end": 1793786987.028312, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps3__s2", "rc": 0, "hours": 0.01266468306382497, "end": 1793787017.6073554, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps3__s3", "rc": 0, "hours": 0.012672411402066548, "end": 1793787032.8536167, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps3__s4", "rc": 0, "hours": 0.012674446437093947, "end": 1793787063.4693108, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps8__s0", "rc": 0, "hours": 0.016891589562098186, "end": 1793787093.8862257, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps8__s1", "rc": 0, "hours": 0.016882076528337266, "end": 1793787124.4594314, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps8__s2", "rc": 0, "hours": 0.016880705091688368, "end": 1793787154.8702512, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps8__s3", "rc": 0, "hours": 0.016885186235109966, "end": 1793787185.4698641, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps8__s4", "rc": 0, "hours": 0.016885383460256788, "end": 1793787215.8791733, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__epsinf__s0", "rc": 0, "hours": 0.008392871485816107, "end": 1793787215.889435, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__epsinf__s1", "rc": 0, "hours": 0.00844640016555786, "end": 1793787246.565517, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__epsinf__s2", "rc": 0, "hours": 0.012664226492245993, "end": 1793787261.775496, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__epsinf__s3", "rc": 0, "hours": 0.008392541408538819, "end": 1793787276.9805164, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__epsinf__s4", "rc": 0, "hours": 0.008392817311816745, "end": 1793787292.1999648, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps1__s0", "rc": 0, "hours": 0.012665624949667189, "end": 1793787322.7936354, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps1__s1", "rc": 0, "hours": 0.012662250995635987, "end": 1793787337.9933958, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps1__s2", "rc": 0, "hours": 0.012667913569344415, "end": 1793787368.5891905, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps1__s3", "rc": 0, "hours": 0.01266185310151842, "end": 1793787383.7941551, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps1__s4", "rc": 0, "hours": 0.012610980735884772, "end": 1793787414.1682522, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps3__s0", "rc": 0, "hours": 0.01686692178249359, "end": 1793787444.7117846, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps3__s1", "rc": 0, "hours": 0.01688177459769779, "end": 1793787475.1438518, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps3__s2", "rc": 0, "hours": 0.01688698298401303, "end": 1793787505.7080185, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps3__s3", "rc": 0, "hours": 0.016873081657621594, "end": 1793787536.0937767, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps3__s4", "rc": 0, "hours": 0.012659158375528124, "end": 1793787551.4829187, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps8__s0", "rc": 0, "hours": 0.021129096415307788, "end": 1793787612.36336, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps8__s1", "rc": 0, "hours": 0.021087012357181974, "end": 1793787627.5859258, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps8__s2", "rc": 0, "hours": 0.021099677483240764, "end": 1793787688.5353882, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps8__s3", "rc": 0, "hours": 0.016870445807774862, "end": 1793787688.5353882, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__epsinf__s0", "rc": 0, "hours": 0.012656295829349094, "end": 1793787734.3867986, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps8__s4", "rc": 0, "hours": 0.016886057986153495, "end": 1793787749.5800908, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__epsinf__s1", "rc": 0, "hours": 0.008398857315381368, "end": 1793787764.80878, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__epsinf__s2", "rc": 0, "hours": 0.008416702416208056, "end": 1793787780.0970964, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__epsinf__s3", "rc": 0, "hours": 0.008592235975795321, "end": 1793787796.0067992, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__epsinf__s4", "rc": 0, "hours": 0.008433243830998739, "end": 1793787811.1736543, "est_h": 0.0, "resource": "cpu"}
+{"id": "dl__isic2019", "rc": 4294967295, "hours": 0.5756988600889842, "end": 1793788907.214336, "est_h": 0.0, "resource": "net"}
+{"id": "dl__isic2019", "rc": 0, "hours": 0.16495395792855158, "end": 1793805237.3117673, "est_h": 0.0, "resource": "net"}
+{"id": "dl__backbones", "rc": 0, "hours": 0.03374505294693841, "end": 1793805359.0480442, "est_h": 0.0, "resource": "net"}
+{"id": "prep__isic2019", "rc": 0, "hours": 0.05056118872430589, "end": 1793805419.549994, "est_h": 0.0, "resource": "cpu"}
+{"id": "cache__isic2019__dinov2_vits14", "rc": 0, "hours": 0.1383770951297548, "end": 1793805917.802683, "est_h": 0.3, "resource": "gpu"}
+{"id": "isic2019__timing__eps3__s99", "rc": 0, "hours": 0.22988825692070855, "end": 1793806745.5242171, "est_h": 0.25385572139303486, "resource": "gpu"}
+{"id": "eval__isic2019__timing__eps3__s99", "rc": 0, "hours": 0.02087261292669508, "end": 1793806820.751885, "est_h": 0.0, "resource": "cpu"}
+{"id": "dl__isic2020", "rc": 0, "hours": 1.3590907114744186, "end": 1793810251.9294949, "est_h": 0.0, "resource": "net"}
+{"id": "dl__pad_ufes", "rc": 0, "hours": 0.24753782391548157, "end": 1793811143.1940682, "est_h": 0.0, "resource": "net"}
+{"id": "prep__pad_ufes20", "rc": 0, "hours": 0.1511500640710195, "end": 1793811687.5599327, "est_h": 0.0, "resource": "cpu"}
+{"id": "prep__isic2020", "rc": 0, "hours": 0.9733293243249257, "end": 1793813756.0057344, "est_h": 0.0, "resource": "cpu"}
+{"id": "audit__inversion__fedavg_full_nodp", "rc": 0, "hours": 2.711602274444368, "end": 1793816507.3470552, "est_h": 1.0, "resource": "gpu"}
+{"id": "dl__camelyon17", "rc": 1, "hours": 0.008342241975996229, "end": 1793822142.3604367, "est_h": 0.0, "resource": "net"}
+{"id": "dl__camelyon17", "rc": 1, "hours": 0.008340374165111119, "end": 1793822172.448083, "est_h": 0.0, "resource": "net"}
+{"id": "cooldown__1793814395", "rc": 0, "hours": 0.25872764858934616, "end": 1793823043.7103994, "est_h": 0.0, "resource": "cpu"}
+{"id": "cache__isic2020__dinov2_vits14", "rc": 0, "hours": 0.054231469366285534, "end": 1793823238.9985063, "est_h": 0.3, "resource": "gpu"}
+{"id": "cache__pad_ufes20__dinov2_vits14", "rc": 0, "hours": 0.020851580964194403, "end": 1793823314.153756, "est_h": 0.3, "resource": "gpu"}
+{"id": "dl__bloodmnist", "rc": 1, "hours": 0.3379878979921341, "end": 1793823389.2726712, "est_h": 0.0, "resource": "net"}
+{"id": "dl__bloodmnist", "rc": 1, "hours": 0.004166835678948297, "end": 1793823404.3177655, "est_h": 0.0, "resource": "net"}
+{"id": "cache__isic2020_canary__dinov2_vits14", "rc": 0, "hours": 0.04172418799665239, "end": 1793823464.4034228, "est_h": 0.3, "resource": "gpu"}
+{"id": "cache__isic2019__biomedclip", "rc": 1, "hours": 0.00833790381749471, "end": 1793823494.4741294, "est_h": 0.3, "resource": "gpu"}
+{"id": "cache__isic2019__biomedclip", "rc": 1, "hours": 0.00834013925658332, "end": 1793823524.5440586, "est_h": 0.3, "resource": "gpu"}
+{"id": "tune__C0.5_lr0.001_r8", "rc": 0, "hours": 0.2944570200310813, "end": 1793823583.7215848, "est_h": 0.7286069651741294, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "tune__C0.5_lr0.002_r8", "rc": 0, "hours": 0.28839096870687275, "end": 1793823583.730284, "est_h": 0.7286069651741294, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "tune__C0.5_lr0.005_r8", "rc": 0, "hours": 0.2877244900994831, "end": 1793823583.7338014, "est_h": 0.7286069651741294, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "tune__C1.0_lr0.001_r8", "rc": 0, "hours": 0.2951965942647722, "end": 1793823583.7388773, "est_h": 0.7286069651741294, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "tune__C1.0_lr0.002_r8", "rc": 0, "hours": 0.28809750099976855, "end": 1793823583.7429123, "est_h": 0.7286069651741294, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "tune__C1.0_lr0.005_r8", "rc": 0, "hours": 0.2945100075668759, "end": 1793823583.7480545, "est_h": 0.7286069651741294, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "tune__C2.0_lr0.001_r8", "rc": 0, "hours": 0.28866934226618873, "end": 1793823583.7527816, "est_h": 0.7286069651741294, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "tune__C2.0_lr0.002_r8", "rc": 0, "hours": 0.29524267382091945, "end": 1793823583.7590978, "est_h": 0.7286069651741294, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "tune__C2.0_lr0.005_r8", "rc": 0, "hours": 0.28736287779278225, "end": 1793823583.7642765, "est_h": 0.7286069651741294, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "tune__select_cl", "rc": 0, "hours": 0.0005366654528511895, "end": 1793823583.7662761, "est_h": 0.0, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "tune__rank16", "rc": 0, "hours": 0.2895206883880827, "end": 1793823583.7721102, "est_h": 0.7286069651741294, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "tune__rank4", "rc": 0, "hours": 0.29564591321680284, "end": 1793823583.7721102, "est_h": 0.7286069651741294, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "tune__select", "rc": 0, "hours": 0.0005271630816989475, "end": 1793823583.7721102, "est_h": 0.0, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "dl__pneumoniamnist", "rc": 1, "hours": 0.06259134352207184, "end": 1793823629.6838446, "est_h": 0.0, "resource": "net"}
+{"id": "cache__isic2019__vit_s_in", "rc": 0, "hours": 0.11416365994347466, "end": 1793823935.5684216, "est_h": 0.3, "resource": "gpu"}
+{"id": "dl__pneumoniamnist", "rc": 1, "hours": 0.0041702415545781454, "end": 1793827280.9259317, "est_h": 0.0, "resource": "net"}
+{"id": "dl__retinamnist", "rc": 1, "hours": 0.0625898383061091, "end": 1793827506.2830837, "est_h": 0.0, "resource": "net"}
+{"id": "dl__retinamnist", "rc": 1, "hours": 0.004170186122258504, "end": 1793827521.3445046, "est_h": 0.0, "resource": "net"}
+{"id": "dl__organamnist", "rc": 1, "hours": 0.2253472926881578, "end": 1793828332.6299024, "est_h": 0.0, "resource": "net"}
+{"id": "dl__organamnist", "rc": 1, "hours": 0.004167112575636969, "end": 1793828347.6879113, "est_h": 0.0, "resource": "net"}
+{"id": "dl__octmnist", "rc": 1, "hours": 0.5550619508160485, "end": 1793830345.94911, "est_h": 0.0, "resource": "net"}
+{"id": "dl__octmnist", "rc": 1, "hours": 0.004167308410008748, "end": 1793830360.9984667, "est_h": 0.0, "resource": "net"}
+{"id": "tune2__lr0.0005", "rc": 0, "hours": 0.30877889653046925, "end": 1793832414.157797, "est_h": 0.7286069651741294, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "tune2__lr0.001", "rc": 0, "hours": 0.3014850144916111, "end": 1793832414.157797, "est_h": 0.7286069651741294, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "tune2__lr0.002", "rc": 0, "hours": 0.30380528264575535, "end": 1793832414.1681085, "est_h": 0.7286069651741294, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "tune2__lr0.003", "rc": 0, "hours": 0.3065028450224135, "end": 1793832414.1681085, "est_h": 0.7286069651741294, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "tune__select", "rc": 0, "hours": 0.001360669003592597, "end": 1793832414.1681085, "est_h": 0.0, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "dl__pathmnist", "rc": 1, "hours": 1.4524070995383793, "end": 1793835589.701446, "est_h": 0.0, "resource": "net"}
+{"id": "dl__bloodmnist", "rc": 0, "hours": 0.01669737259546916, "end": 1793835649.864182, "est_h": 0.0, "resource": "net"}
+{"id": "dl__pneumoniamnist", "rc": 0, "hours": 0.008340600662761264, "end": 1793835679.953982, "est_h": 0.0, "resource": "net"}
+{"id": "dl__retinamnist", "rc": 0, "hours": 0.008346759014659458, "end": 1793835710.075461, "est_h": 0.0, "resource": "net"}
+{"id": "dl__organamnist", "rc": 0, "hours": 0.016702214744355945, "end": 1793835770.2652416, "est_h": 0.0, "resource": "net"}
+{"id": "dl__octmnist", "rc": 0, "hours": 0.025037651790512934, "end": 1793835860.4480145, "est_h": 0.0, "resource": "net"}
+{"id": "dl__pathmnist", "rc": 0, "hours": 0.045927461120817394, "end": 1793836025.8454163, "est_h": 0.0, "resource": "net"}
+{"id": "isic2019__triguard__eps3__s0", "rc": 0, "hours": 3.6182295144266554, "end": 1793845445.0099506, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "eval__isic2019__triguard__eps3__s0", "rc": 0, "hours": 0.020897158053186204, "end": 1793851539.6516767, "est_h": 0.0, "resource": "cpu"}
+{"id": "lira__eps3__shadow0", "rc": 0, "hours": 0.7838076563013925, "end": 1793851711.6560354, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps3__shadow1", "rc": 0, "hours": 0.7883186549610561, "end": 1793851711.6868296, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps3__shadow2", "rc": 0, "hours": 0.780357745024893, "end": 1793851711.7071335, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps3__shadow3", "rc": 0, "hours": 0.7882039360867606, "end": 1793851711.7275584, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps3__shadow4", "rc": 0, "hours": 0.7868730411926905, "end": 1793851711.7644231, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps3__shadow5", "rc": 0, "hours": 0.7817003318998549, "end": 1793851711.7864926, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps3__shadow6", "rc": 0, "hours": 0.7841640182336171, "end": 1793851711.8172119, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps3__shadow7", "rc": 0, "hours": 0.7794431426790025, "end": 1793851711.8510518, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__epsinf__shadow0", "rc": 0, "hours": 0.5711749955018361, "end": 1793851711.8862674, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__epsinf__shadow1", "rc": 0, "hours": 0.5724585084782706, "end": 1793851711.907596, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__epsinf__shadow2", "rc": 0, "hours": 0.5683772212266922, "end": 1793851711.9382205, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__epsinf__shadow3", "rc": 0, "hours": 0.575793926053577, "end": 1793851711.9739523, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__epsinf__shadow4", "rc": 0, "hours": 0.5753650747405158, "end": 1793851711.9988146, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__epsinf__shadow5", "rc": 0, "hours": 0.5726335251993603, "end": 1793851712.0238945, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "audit__lira__eps3", "rc": 0, "hours": 0.00834843827618493, "end": 1793851750.6883967, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps1__s0", "rc": 0, "hours": 0.01672772076394823, "end": 1793857038.4175496, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps3__s0", "rc": 0, "hours": 0.012546724478403727, "end": 1793857083.7120023, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__eps8__s0", "rc": 0, "hours": 0.016729769044452242, "end": 1793857144.0418277, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__dpfedavg_lr__epsinf__s0", "rc": 0, "hours": 0.008350242508782281, "end": 1793857174.1908717, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__triguard__eps3__s0", "rc": 0, "hours": 0.0586646866136127, "end": 1793857189.3062177, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps1__s0", "rc": 0, "hours": 0.016744821005397374, "end": 1793857234.5827122, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps3__s0", "rc": 0, "hours": 0.012547415561146207, "end": 1793857234.5863726, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__epsinf__s0", "rc": 0, "hours": 0.008348750074704488, "end": 1793857264.7960927, "est_h": 0.0, "resource": "cpu"}
+{"id": "heart__re_dpscp__eps8__s0", "rc": 0, "hours": 0.01671493026945326, "end": 1793857294.8549683, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__b6_ffalora__eps3__s0", "rc": 0, "hours": 2.761640217370457, "end": 1793861406.2643247, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "eval__isic2019__b6_ffalora__eps3__s0", "rc": 0, "hours": 0.020860188404719034, "end": 1793861481.4327178, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__b5_fedlora__eps3__s0", "rc": 0, "hours": 2.754583673013581, "end": 1793873617.3139374, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "isic2019__b7_personal__eps1__s0", "rc": 1, "hours": 0.01674458470609453, "end": 1793873677.6723154, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "isic2019__b7_personal__eps1__s0", "rc": 1, "hours": 0.012547102239396837, "end": 1793873722.91056, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "isic2019__b1_local__eps1__s0", "rc": 1, "hours": 0.012532123923301696, "end": 1793873768.0949447, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "eval__isic2019__b5_fedlora__eps3__s0", "rc": 0, "hours": 0.046057879991001555, "end": 1793873783.2339368, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__b1_local__eps1__s0", "rc": 1, "hours": 0.012549083564016555, "end": 1793873813.349133, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "isic2019__b2_central__eps1__s0", "rc": 1, "hours": 0.008365624083413018, "end": 1793873843.524907, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "isic2019__b2_central__eps1__s0", "rc": 1, "hours": 0.008347970445950826, "end": 1793873873.6354837, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "isic2019__triguard__eps8__s0", "rc": 1, "hours": 0.33911357873015935, "end": 1793875094.5334375, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "audit__canary__eps3", "rc": 0, "hours": 1.967189410991139, "end": 1793877139.93784, "est_h": 3.691324626865672, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "audit__canary__eps8", "rc": 0, "hours": 1.8437950207127465, "end": 1793877139.9584558, "est_h": 3.691324626865672, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__a1_fedavg__eps3__s0", "rc": 0, "hours": 1.8370622052748997, "end": 1793877139.9790773, "est_h": 3.5155472636815923, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__a2_nolocal__eps3__s0", "rc": 0, "hours": 1.292895763847563, "end": 1793877139.9998486, "est_h": 3.5155472636815923, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__a5_imagenet__eps3__s0", "rc": 0, "hours": 1.475113645195961, "end": 1793877140.0225022, "est_h": 2.6491604477611936, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__epsinf__shadow6", "rc": 0, "hours": 0.6275709301895566, "end": 1793877140.0404415, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__epsinf__shadow7", "rc": 0, "hours": 0.5902178625928031, "end": 1793877140.0608885, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "eval__isic2019__a1_fedavg__eps3__s0", "rc": 0, "hours": 0.05442033370335897, "end": 1793877340.8019414, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__a2_nolocal__eps3__s0", "rc": 0, "hours": 0.05441189063919915, "end": 1793877340.8019414, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__triguard__eps3__s0", "rc": 1, "hours": 0.6406844047705332, "end": 1793877401.0530255, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "audit__lira__epsinf", "rc": 1, "hours": 0.008347282343440586, "end": 1793881967.0837924, "est_h": 0.0, "resource": "cpu"}
+{"id": "audit__lira__epsinf", "rc": 1, "hours": 0.008341520031293233, "end": 1793881997.1873221, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__b7_personal__eps3__s0", "rc": 0, "hours": 1.8617954833639994, "end": 1793882153.671779, "est_h": 3.5155472636815923, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b1_local__eps3__s0", "rc": 0, "hours": 1.8512180566125447, "end": 1793882153.7066338, "est_h": 3.5155472636815923, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b2_central__eps3__s0", "rc": 0, "hours": 1.8709593921899796, "end": 1793882153.7459338, "est_h": 3.5155472636815923, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b4_probe__eps3__s0", "rc": 0, "hours": 0.08241567413012187, "end": 1793882153.7810717, "est_h": 0.15, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b4_probe__eps8__s0", "rc": 0, "hours": 0.10117642601331076, "end": 1793882153.8345518, "est_h": 0.15, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b4_probe__epsinf__s0", "rc": 0, "hours": 0.06300631139013502, "end": 1793882153.8746529, "est_h": 0.15, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b3_resnet__eps3__s0", "rc": 0, "hours": 1.5807708173327977, "end": 1793882153.967028, "est_h": 1.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "eval__isic2019__b7_personal__eps3__s0", "rc": 0, "hours": 0.08826220174630484, "end": 1793882481.698459, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b1_local__eps3__s0", "rc": 0, "hours": 0.08820689532491896, "end": 1793882481.698459, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b2_central__eps3__s0", "rc": 0, "hours": 0.02507400737868415, "end": 1793882572.058992, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b4_probe__eps3__s0", "rc": 0, "hours": 0.025055502586894565, "end": 1793882572.058992, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b4_probe__epsinf__s0", "rc": 0, "hours": 0.008339067763752407, "end": 1793882602.2441149, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b3_resnet__eps3__s0", "rc": 0, "hours": 0.0250577449798584, "end": 1793882692.5552704, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b4_probe__eps8__s0", "rc": 0, "hours": 0.04596583478980594, "end": 1793882737.6353261, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__b6_ffalora__eps8__s0", "rc": 0, "hours": 2.6680817611349954, "end": 1793891542.067926, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "eval__isic2019__b6_ffalora__eps8__s0", "rc": 0, "hours": 0.0250217819876141, "end": 1793891632.2267318, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__b2_central__eps8__s0", "rc": 1, "hours": 1.9141900005605486, "end": 1793898433.209809, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "isic2019__triguard__eps3__s0", "rc": 0, "hours": 3.8808797927035226, "end": 1793912404.4716902, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "eval__isic2019__triguard__eps3__s0", "rc": 0, "hours": 0.0501926851272583, "end": 1793912585.2594018, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__b6_ffalora__eps1__s0", "rc": 0, "hours": 1.307932932443089, "end": 1793914652.420314, "est_h": 3.5155472636815923, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b5_fedlora__eps1__s0", "rc": 0, "hours": 1.4412520503997803, "end": 1793914652.4572537, "est_h": 3.5155472636815923, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b7_personal__eps1__s0", "rc": 0, "hours": 1.8908465884129206, "end": 1793914652.4877665, "est_h": 3.5155472636815923, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b1_local__eps1__s0", "rc": 0, "hours": 1.809418656428655, "end": 1793914652.5287178, "est_h": 3.5155472636815923, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b2_central__eps1__s0", "rc": 0, "hours": 1.8042759475443098, "end": 1793914652.5652869, "est_h": 3.5155472636815923, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b4_probe__eps1__s0", "rc": 0, "hours": 0.08707706338829464, "end": 1793914652.5797787, "est_h": 0.15, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b5_fedlora__eps8__s0", "rc": 0, "hours": 1.4611090562740963, "end": 1793914652.6116612, "est_h": 3.5155472636815923, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b7_personal__eps8__s0", "rc": 0, "hours": 1.9376013926002715, "end": 1793914652.631588, "est_h": 3.5155472636815923, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b1_local__eps8__s0", "rc": 0, "hours": 1.802989760769738, "end": 1793914652.6519523, "est_h": 3.5155472636815923, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b3_resnet__eps1__s0", "rc": 0, "hours": 1.709777669178115, "end": 1793914652.6622424, "est_h": 1.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b3_resnet__eps8__s0", "rc": 0, "hours": 1.7178865352604125, "end": 1793914652.6826358, "est_h": 1.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__triguard__eps1__s0", "rc": 1, "hours": 0.6444275254673428, "end": 1793914724.475307, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "eval__isic2019__b6_ffalora__eps1__s0", "rc": 0, "hours": 0.055819379157490204, "end": 1793914865.16524, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b5_fedlora__eps1__s0", "rc": 0, "hours": 0.055810957352320355, "end": 1793914865.16524, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b7_personal__eps1__s0", "rc": 0, "hours": 0.05439924677213033, "end": 1793915061.079179, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b1_local__eps1__s0", "rc": 0, "hours": 0.05858035663763682, "end": 1793915076.1625981, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b4_probe__eps1__s0", "rc": 0, "hours": 0.05855646014213562, "end": 1793915287.0384257, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b2_central__eps1__s0", "rc": 0, "hours": 0.12970785313182406, "end": 1793915528.1037645, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b5_fedlora__eps8__s0", "rc": 0, "hours": 0.09622549487484826, "end": 1793915633.610119, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b7_personal__eps8__s0", "rc": 0, "hours": 0.09204980419741736, "end": 1793915859.5824962, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b1_local__eps8__s0", "rc": 0, "hours": 0.0920540064573288, "end": 1793915965.1290877, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b3_resnet__eps1__s0", "rc": 0, "hours": 0.05856505009863112, "end": 1793916070.5807161, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b3_resnet__eps8__s0", "rc": 0, "hours": 0.09201510243945651, "end": 1793916296.4878516, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__b2_central__eps8__s0", "rc": 0, "hours": 2.3610039024882847, "end": 1793923224.1851778, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "eval__isic2019__b2_central__eps8__s0", "rc": 0, "hours": 0.09201242321067386, "end": 1793923555.5197635, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__triguard__eps3__s0", "rc": 1, "hours": 0.008354368938340082, "end": 1793930633.6811535, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__triguard__eps1__s0", "rc": 1, "hours": 0.012570716076427036, "end": 1793930648.8885171, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__triguard__eps3__s0", "rc": 1, "hours": 0.008406702346271938, "end": 1793930664.144732, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__triguard__eps1__s0", "rc": 1, "hours": 0.008416727979977926, "end": 1793930679.2971215, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__triguard__eps8__s0", "rc": 1, "hours": 0.008369277053409152, "end": 1793930694.4225695, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__a3_frozenA__eps3__s0", "rc": 1, "hours": 0.008377871248457167, "end": 1793930709.5752358, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__triguard__eps8__s0", "rc": 1, "hours": 0.008376998437775505, "end": 1793930724.7271855, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__a3_frozenA__eps3__s0", "rc": 1, "hours": 0.008359347184499105, "end": 1793930739.772242, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__triguard__eps3__s0", "rc": 0, "hours": 0.008371978335910373, "end": 1793931161.648501, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__triguard__eps1__s0", "rc": 0, "hours": 0.008362489210234749, "end": 1793931161.648501, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__triguard__eps3__s0", "rc": 0, "hours": 0.0585841797457801, "end": 1793931372.6443777, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__triguard__eps1__s0", "rc": 0, "hours": 0.06279631012015872, "end": 1793931387.8462899, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__triguard__eps8__s0", "rc": 0, "hours": 0.00838347487979465, "end": 1793931402.9687352, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__a3_frozenA__eps3__s0", "rc": 0, "hours": 0.008357380628585815, "end": 1793931418.0514402, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__a3_frozenA__eps3__s0", "rc": 0, "hours": 0.054368829329808556, "end": 1793931613.9250326, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__triguard__eps8__s0", "rc": 0, "hours": 0.10041678746541341, "end": 1793931764.5441742, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__b6_ffalora__epsinf__s0", "rc": 0, "hours": 2.607770817544725, "end": 1793932612.2167172, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "eval__isic2019__b6_ffalora__epsinf__s0", "rc": 0, "hours": 0.025182923608356052, "end": 1793932703.012324, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__b5_fedlora__epsinf__s0", "rc": 0, "hours": 2.935089876651764, "end": 1793943178.6208384, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "isic2019__triguard__epsinf__s0", "rc": 0, "hours": 0.008368203573756748, "end": 1793943208.8447282, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b5_fedlora__epsinf__s0", "rc": 0, "hours": 0.008355399436420864, "end": 1793943208.845728, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__triguard__epsinf__s0", "rc": 0, "hours": 0.008347619639502632, "end": 1793943238.9855335, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__b7_personal__epsinf__s0", "rc": 0, "hours": 3.9969404313961663, "end": 1793957567.6819587, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "eval__isic2019__b7_personal__epsinf__s0", "rc": 0, "hours": 0.012533753448062472, "end": 1793957613.0058565, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__b1_local__epsinf__s0", "rc": 0, "hours": 3.7447377775112787, "end": 1793971048.9018934, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "eval__isic2019__b1_local__epsinf__s0", "rc": 0, "hours": 0.012539245552486844, "end": 1793971094.1843429, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__b2_central__epsinf__s0", "rc": 0, "hours": 3.8479505736960307, "end": 1793984901.6197815, "est_h": 3.5155472636815923, "resource": "gpu"}
+{"id": "eval__isic2019__b2_central__epsinf__s0", "rc": 0, "hours": 0.008336788018544514, "end": 1793984931.7062526, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__b3_resnet__epsinf__s0", "rc": 0, "hours": 2.4785635708438027, "end": 1793993824.496395, "est_h": 1.6, "resource": "gpu"}
+{"id": "eval__isic2019__b3_resnet__epsinf__s0", "rc": 0, "hours": 0.004172708392143249, "end": 1793993839.580315, "est_h": 0.0, "resource": "cpu"}
+{"id": "pad__b6_ffalora", "rc": 0, "hours": 0.020867204003863864, "end": 1793993899.6487572, "est_h": 0.1, "resource": "gpu"}
+{"id": "pad__triguard", "rc": 0, "hours": 0.01668002578947279, "end": 1793993959.7488885, "est_h": 0.1, "resource": "gpu"}
+{"id": "audit__canary__eps1", "rc": 0, "hours": 3.0415432952509986, "end": 1794004909.3557832, "est_h": 3.691324626865672, "resource": "gpu"}
+{"id": "audit__canary__epsinf", "rc": 0, "hours": 2.6487841562430066, "end": 1794014445.0225158, "est_h": 3.691324626865672, "resource": "gpu"}
+{"id": "audit__inversion__eps1", "rc": 0, "hours": 0.8825232815742493, "end": 1794017622.1558003, "est_h": 1.5, "resource": "gpu"}
+{"id": "audit__inversion__eps3", "rc": 0, "hours": 0.6858476422892676, "end": 1794020091.2970285, "est_h": 1.5, "resource": "gpu"}
+{"id": "eval__isic2019__triguard__eps3__s0", "rc": 0, "hours": 0.11331351419289906, "end": 1794029714.0433395, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__triguard__eps1__s0", "rc": 0, "hours": 0.12168746875392066, "end": 1794029744.318629, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__triguard__epsinf__s0", "rc": 0, "hours": 0.03789368596341875, "end": 1794029880.9069083, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__triguard__eps8__s0", "rc": 0, "hours": 0.1636594083574083, "end": 1794030303.3698945, "est_h": 0.0, "resource": "cpu"}
+{"id": "audit__inversion__eps8", "rc": 0, "hours": 0.9470938225587209, "end": 1794031976.640993, "est_h": 1.5, "resource": "gpu"}
+{"id": "audit__inversion__epsinf", "rc": 0, "hours": 0.7609305696354972, "end": 1794034716.0995445, "est_h": 1.5, "resource": "gpu"}
+{"id": "cache__isic2019__biomedclip", "rc": 0, "hours": 0.29452665719721055, "end": 1794035776.465345, "est_h": 0.3, "resource": "gpu"}
+{"id": "cache__bloodmnist__dinov2_vits14", "rc": 0, "hours": 0.09612217909759946, "end": 1794036122.5750027, "est_h": 0.3, "resource": "gpu"}
+{"id": "cache__octmnist__dinov2_vits14", "rc": 0, "hours": 0.08775116443634033, "end": 1794036438.5361955, "est_h": 0.3, "resource": "gpu"}
+{"id": "cache__organamnist__dinov2_vits14", "rc": 0, "hours": 0.08776384856965806, "end": 1794036754.594272, "est_h": 0.3, "resource": "gpu"}
+{"id": "cache__pathmnist__dinov2_vits14", "rc": 0, "hours": 0.1087396075990465, "end": 1794037146.1771176, "est_h": 0.3, "resource": "gpu"}
+{"id": "cache__pneumoniamnist__dinov2_vits14", "rc": 0, "hours": 0.07943645748827192, "end": 1794037432.2482684, "est_h": 0.3, "resource": "gpu"}
+{"id": "cache__retinamnist__dinov2_vits14", "rc": 0, "hours": 0.05016710850927565, "end": 1794037612.9755766, "est_h": 0.3, "resource": "gpu"}
+{"id": "lira__eps8__shadow6", "rc": 0, "hours": 1.4263990632030699, "end": 1794042748.0908568, "est_h": 1.5877516583747928, "resource": "gpu"}
+{"id": "lira__eps8__shadow7", "rc": 0, "hours": 1.404417510430018, "end": 1794047804.1898768, "est_h": 1.5877516583747928, "resource": "gpu"}
+{"id": "bloodmnist__b6_ffalora__eps3__s0", "rc": 0, "hours": 0.4556418342060513, "end": 1794047941.9525392, "est_h": 1.1664179104477612, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "bloodmnist__triguard__eps3__s0", "rc": 0, "hours": 0.4844118803077274, "end": 1794047941.9683762, "est_h": 1.1664179104477612, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "octmnist__b6_ffalora__eps3__s0", "rc": 0, "hours": 0.4460473892423842, "end": 1794047941.9683762, "est_h": 1.1664179104477612, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "octmnist__triguard__eps3__s0", "rc": 0, "hours": 0.47320872518751356, "end": 1794047941.986225, "est_h": 1.1664179104477612, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "organamnist__b6_ffalora__eps3__s0", "rc": 0, "hours": 0.45372679518328773, "end": 1794047941.991037, "est_h": 1.1664179104477612, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "organamnist__triguard__eps3__s0", "rc": 0, "hours": 0.4816970809300741, "end": 1794047941.9968543, "est_h": 1.1664179104477612, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "pathmnist__b6_ffalora__eps3__s0", "rc": 0, "hours": 0.4534039701355828, "end": 1794047942.00296, "est_h": 1.1664179104477612, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "pathmnist__triguard__eps3__s0", "rc": 0, "hours": 0.4805743751923243, "end": 1794047942.00296, "est_h": 1.1664179104477612, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "pneumoniamnist__b6_ffalora__eps3__s0", "rc": 0, "hours": 0.3570771772331662, "end": 1794047942.016298, "est_h": 1.1664179104477612, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "pneumoniamnist__triguard__eps3__s0", "rc": 0, "hours": 0.38011736280388303, "end": 1794047942.016298, "est_h": 1.1664179104477612, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "retinamnist__b6_ffalora__eps3__s0", "rc": 0, "hours": 0.11573282056384616, "end": 1794047942.016298, "est_h": 1.1664179104477612, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "retinamnist__triguard__eps3__s0", "rc": 0, "hours": 0.13687453541490766, "end": 1794047942.0322008, "est_h": 1.1664179104477612, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "bloodmnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.6085297211011251, "end": 1794047942.0322008, "est_h": 0.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "octmnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.614183294640647, "end": 1794047942.0322008, "est_h": 0.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "organamnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.6161462679836485, "end": 1794047942.0322008, "est_h": 0.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "pathmnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.6314202659659915, "end": 1794047942.0322008, "est_h": 0.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "pneumoniamnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.47265831795003677, "end": 1794047942.0482175, "est_h": 0.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "retinamnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.1717737619744407, "end": 1794047942.0482175, "est_h": 0.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "eval__bloodmnist__b6_ffalora__eps3__s0", "rc": 0, "hours": 0.012522297634018792, "end": 1794047999.516807, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__bloodmnist__triguard__eps3__s0", "rc": 0, "hours": 0.025096620784865485, "end": 1794048044.821797, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__octmnist__b6_ffalora__eps3__s0", "rc": 0, "hours": 0.02506946729289161, "end": 1794048089.964115, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__octmnist__triguard__eps3__s0", "rc": 0, "hours": 0.02506751947932773, "end": 1794048135.1261816, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__organamnist__b6_ffalora__eps3__s0", "rc": 0, "hours": 0.03761186665958828, "end": 1794048225.427848, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__organamnist__triguard__eps3__s0", "rc": 0, "hours": 0.04180069499545627, "end": 1794048285.673012, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__pathmnist__b6_ffalora__eps3__s0", "rc": 0, "hours": 0.0376124495267868, "end": 1794048360.9066367, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__pathmnist__triguard__eps3__s0", "rc": 0, "hours": 0.03760905524094899, "end": 1794048421.1272285, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__pneumoniamnist__b6_ffalora__eps3__s0", "rc": 0, "hours": 0.020899301634894476, "end": 1794048436.2080774, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__pneumoniamnist__triguard__eps3__s0", "rc": 0, "hours": 0.02090035988224877, "end": 1794048496.4428768, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__retinamnist__b6_ffalora__eps3__s0", "rc": 0, "hours": 0.025077345040109424, "end": 1794048526.581889, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__retinamnist__triguard__eps3__s0", "rc": 0, "hours": 0.025075060857666864, "end": 1794048586.778849, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__bloodmnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.033429170648256935, "end": 1794048646.993455, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__octmnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.025072288049591912, "end": 1794048677.11819, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__organamnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.03761101868417528, "end": 1794048782.4703665, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__pathmnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.03760792440838284, "end": 1794048812.5752873, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__pneumoniamnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.02089401748445299, "end": 1794048857.7535622, "est_h": 0.0, "resource": "cpu"}
+{"id": "clean__bloodmnist", "rc": 0, "hours": 0.00835280848873986, "end": 1794048887.8827357, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__retinamnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.025084615614679125, "end": 1794048902.9582808, "est_h": 0.0, "resource": "cpu"}
+{"id": "clean__octmnist", "rc": 0, "hours": 0.008355057570669386, "end": 1794048918.0326812, "est_h": 0.0, "resource": "cpu"}
+{"id": "clean__organamnist", "rc": 0, "hours": 0.008353067768944634, "end": 1794048933.101334, "est_h": 0.0, "resource": "cpu"}
+{"id": "clean__pathmnist", "rc": 0, "hours": 0.008378713064723545, "end": 1794048948.2565308, "est_h": 0.0, "resource": "cpu"}
+{"id": "clean__pneumoniamnist", "rc": 0, "hours": 0.008361590769555834, "end": 1794048963.3184185, "est_h": 0.0, "resource": "cpu"}
+{"id": "clean__retinamnist", "rc": 0, "hours": 0.008344369265768262, "end": 1794048978.3549001, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__a1_re__eps3__s0", "rc": 0, "hours": 1.4049189511272642, "end": 1794053630.052426, "est_h": 3.5155472636815923, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__a2_gated__eps3__s0", "rc": 0, "hours": 1.8982523500919342, "end": 1794053630.0616617, "est_h": 3.5155472636815923, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__a4_k1__eps3__s0", "rc": 0, "hours": 0.45376693930890827, "end": 1794053630.0690508, "est_h": 0.9163868159203982, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__a5_imagenet__eps3__s0", "rc": 0, "hours": 1.1388416145245235, "end": 1794053630.075145, "est_h": 2.6491604477611936, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__a6_biomedclip__eps3__s0", "rc": 0, "hours": 2.731633120245404, "end": 1794053630.083112, "est_h": 9.060422885572141, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__a7_allpersonal__eps3__s0", "rc": 0, "hours": 1.8658151233858533, "end": 1794053630.094273, "est_h": 3.5155472636815923, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__epsinf__shadow0", "rc": 0, "hours": 0.5575664869281981, "end": 1794053630.1031756, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__epsinf__shadow1", "rc": 0, "hours": 0.5409880529509651, "end": 1794053630.1112652, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__epsinf__shadow2", "rc": 0, "hours": 0.5465893346733517, "end": 1794053630.11873, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__epsinf__shadow3", "rc": 0, "hours": 0.5406301452053918, "end": 1794053630.1302028, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__epsinf__shadow4", "rc": 0, "hours": 0.5520888162983788, "end": 1794053630.1390314, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__epsinf__shadow5", "rc": 0, "hours": 0.538574502799246, "end": 1794053630.147297, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__epsinf__shadow6", "rc": 0, "hours": 0.5501861109998492, "end": 1794053630.1546032, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__epsinf__shadow7", "rc": 0, "hours": 0.5338314542505476, "end": 1794053630.161967, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps1__shadow0", "rc": 0, "hours": 0.6407270471254984, "end": 1794053630.168156, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps1__shadow1", "rc": 0, "hours": 0.629537889957428, "end": 1794053630.1744056, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps1__shadow2", "rc": 0, "hours": 0.641271726489067, "end": 1794053630.1784885, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps1__shadow3", "rc": 0, "hours": 0.6307637685537338, "end": 1794053630.1934128, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps1__shadow4", "rc": 0, "hours": 0.6463617279132208, "end": 1794053630.2009912, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps1__shadow5", "rc": 0, "hours": 0.6270728501346376, "end": 1794053630.2029471, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps1__shadow6", "rc": 0, "hours": 0.6449451322025723, "end": 1794053630.2163944, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps1__shadow7", "rc": 0, "hours": 0.6247569487492244, "end": 1794053630.2242107, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps8__shadow0", "rc": 0, "hours": 0.6644784414768219, "end": 1794053630.2312212, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps8__shadow1", "rc": 0, "hours": 0.6546582737233904, "end": 1794053630.2400675, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps8__shadow2", "rc": 1, "hours": 0.01671076642142402, "end": 1794053700.3420045, "est_h": 1.5877516583747928, "resource": "gpu"}
+{"id": "lira__eps8__shadow3", "rc": 1, "hours": 0.012513015998734368, "end": 1794053745.4553003, "est_h": 1.5877516583747928, "resource": "gpu"}
+{"id": "eval__isic2019__a2_gated__eps3__s0", "rc": 0, "hours": 0.03339946038193173, "end": 1794053760.48595, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__a1_re__eps3__s0", "rc": 0, "hours": 0.0375943938891093, "end": 1794053775.5562031, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__a4_k1__eps3__s0", "rc": 0, "hours": 0.025037412775887384, "end": 1794053850.6899645, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__a5_imagenet__eps3__s0", "rc": 0, "hours": 0.025035321248902214, "end": 1794053865.741476, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__a6_biomedclip__eps3__s0", "rc": 0, "hours": 0.025041181312667, "end": 1794053940.8859482, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__a7_allpersonal__eps3__s0", "rc": 0, "hours": 0.025041953325271607, "end": 1794053955.9413006, "est_h": 0.0, "resource": "cpu"}
+{"id": "audit__lira__eps1", "rc": 0, "hours": 0.008348399268256293, "end": 1794053970.9944565, "est_h": 0.0, "resource": "cpu"}
+{"id": "audit__lira__epsinf", "rc": 0, "hours": 0.008348256813155281, "end": 1794053986.0466619, "est_h": 0.0, "resource": "cpu"}
+{"id": "clean__isic2019__biomedclip", "rc": 0, "hours": 0.004167755246162415, "end": 1794053986.0466619, "est_h": 0.0, "resource": "cpu"}
+{"id": "clean__isic2019__vit_s_in", "rc": 0, "hours": 0.004169959823290507, "end": 1794054001.1088626, "est_h": 0.0, "resource": "cpu"}
+{"id": "lira__eps8__shadow2", "rc": 0, "hours": 0.6720645317766402, "end": 1794060172.747961, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps8__shadow3", "rc": 0, "hours": 0.6785552135441039, "end": 1794060172.7541723, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps8__shadow4", "rc": 0, "hours": 0.6702992790937423, "end": 1794060172.7615738, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "lira__eps8__shadow5", "rc": 0, "hours": 0.6675103263722526, "end": 1794060172.7655797, "est_h": 1.5877516583747928, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "audit__lira__eps8", "rc": 0, "hours": 0.016676255729463366, "end": 1794060246.0305886, "est_h": 0.0, "resource": "cpu"}
+{"id": "prep__camelyon17", "rc": 0, "hours": 0.000654767288102044, "end": 1794063746.7773848, "est_h": 0.0, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "cache__camelyon17__dinov2_vits14", "rc": 0, "hours": 0.7533549749851227, "end": 1794063746.7773848, "est_h": 0.3, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "camelyon17__b4_probe__eps3__s0", "rc": 0, "hours": 0.17688859376642438, "end": 1794063746.7935882, "est_h": 0.15, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "camelyon17__b6_ffalora__eps3__s0", "rc": 0, "hours": 1.7276684970325893, "end": 1794063746.7935882, "est_h": 2.8410447761194026, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "camelyon17__triguard__eps3__s0", "rc": 0, "hours": 1.831372657087114, "end": 1794063746.8019042, "est_h": 2.8410447761194026, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "camelyon17__b3_resnet__eps3__s0", "rc": 1, "hours": 0.00835717691315545, "end": 1794063789.0082257, "est_h": 1.5, "resource": "gpu"}
+{"id": "eval__camelyon17__b4_probe__eps3__s0", "rc": 0, "hours": 0.01251469141907162, "end": 1794063804.0172458, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__camelyon17__b6_ffalora__eps3__s0", "rc": 0, "hours": 0.012507492436303032, "end": 1794063804.0192647, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__camelyon17__triguard__eps3__s0", "rc": 0, "hours": 0.008336685631010268, "end": 1794063834.0748236, "est_h": 0.0, "resource": "cpu"}
+{"id": "audit__inversion__fedavg_full_nodp", "rc": 0, "hours": 1.9265658072630565, "end": 1794076129.0767915, "est_h": 1.0, "resource": "gpu"}
+{"id": "isic2019__b3_resnet__eps1__s0", "rc": 0, "hours": 1.513995680809021, "end": 1794096175.186485, "est_h": 1.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b3_resnet__eps3__s0", "rc": 0, "hours": 1.441254864467515, "end": 1794096175.1907556, "est_h": 1.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b3_resnet__eps8__s0", "rc": 0, "hours": 1.4883826080295774, "end": 1794096175.1943064, "est_h": 1.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "isic2019__b3_resnet__epsinf__s0", "rc": 0, "hours": 1.2519061201148562, "end": 1794096175.1969435, "est_h": 1.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "camelyon17__b3_resnet__eps3__s0", "rc": 0, "hours": 2.8979899964067672, "end": 1794096175.1994948, "est_h": 1.5, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "bloodmnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.5544794401857588, "end": 1794096175.2022028, "est_h": 0.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "octmnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.5408999367554983, "end": 1794096175.2042089, "est_h": 0.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "organamnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.5495188460747401, "end": 1794096175.2074797, "est_h": 0.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "pathmnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.5520689927869373, "end": 1794096175.209488, "est_h": 0.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "pneumoniamnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.43879647546344336, "end": 1794096175.2129853, "est_h": 0.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "retinamnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.13492701868216198, "end": 1794096175.215433, "est_h": 0.6, "resource": "remote", "gpu": "Tesla T4"}
+{"id": "eval__isic2019__b3_resnet__eps1__s0", "rc": 0, "hours": 0.016686060627301533, "end": 1794096247.7463963, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b3_resnet__eps3__s0", "rc": 0, "hours": 0.016676435073216755, "end": 1794096247.7463963, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b3_resnet__epsinf__s0", "rc": 1, "hours": 0.008338840074009365, "end": 1794096277.8807955, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b3_resnet__epsinf__s0", "rc": 1, "hours": 0.004167256421513028, "end": 1794096292.919278, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__camelyon17__b3_resnet__eps3__s0", "rc": 0, "hours": 0.004167226685418023, "end": 1794096307.964626, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__bloodmnist__b3_resnet__eps3__s0", "rc": 1, "hours": 0.004168382551934984, "end": 1794096323.003446, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__isic2019__b3_resnet__eps8__s0", "rc": 0, "hours": 0.02506587326526642, "end": 1794096338.0547044, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__bloodmnist__b3_resnet__eps3__s0", "rc": 1, "hours": 0.0041717697514428035, "end": 1794096338.0547044, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__octmnist__b3_resnet__eps3__s0", "rc": 1, "hours": 0.008350544306966993, "end": 1794096368.2269545, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__organamnist__b3_resnet__eps3__s0", "rc": 1, "hours": 0.012512240343623691, "end": 1794096383.26132, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__octmnist__b3_resnet__eps3__s0", "rc": 1, "hours": 0.008346787691116332, "end": 1794096398.3091147, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__organamnist__b3_resnet__eps3__s0", "rc": 1, "hours": 0.0083545669582155, "end": 1794096413.3727126, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__pathmnist__b3_resnet__eps3__s0", "rc": 1, "hours": 0.00834603488445282, "end": 1794096428.4145675, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__pneumoniamnist__b3_resnet__eps3__s0", "rc": 1, "hours": 0.008352093299229939, "end": 1794096443.476312, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__pathmnist__b3_resnet__eps3__s0", "rc": 1, "hours": 0.008346960610813565, "end": 1794096458.5238829, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__pneumoniamnist__b3_resnet__eps3__s0", "rc": 1, "hours": 0.008348032501008776, "end": 1794096473.562272, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__retinamnist__b3_resnet__eps3__s0", "rc": 1, "hours": 0.00833599348862966, "end": 1794096488.5691857, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__retinamnist__b3_resnet__eps3__s0", "rc": 1, "hours": 0.008341264658504063, "end": 1794096518.6493955, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__bloodmnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.020867941909366184, "end": 1794096804.0513937, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__octmnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.020854043430752225, "end": 1794096804.0513937, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__organamnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.025049754513634576, "end": 1794096894.2792692, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__pathmnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.025033533838060167, "end": 1794096894.2792692, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__pneumoniamnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.01670395871003469, "end": 1794096954.4789178, "est_h": 0.0, "resource": "cpu"}
+{"id": "eval__retinamnist__b3_resnet__eps3__s0", "rc": 0, "hours": 0.020858365032407972, "end": 1794096969.4918153, "est_h": 0.0, "resource": "cpu"}
+{"id": "isic2019__b3_resnet__epsinf__s0", "rc": 0, "hours": 2.177125637067689, "end": 1794104175.7436059, "est_h": 1.6, "resource": "gpu"}
+{"id": "eval__isic2019__b3_resnet__epsinf__s0", "rc": 0, "hours": 0.008337870173984104, "end": 1794104205.7930193, "est_h": 0.0, "resource": "cpu"}
+{"id": "report__final", "rc": 0, "hours": 0.00833605408668518, "end": 1794104235.8507397, "est_h": 0.0, "resource": "cpu"}
+{"id": "report__final", "rc": 0, "hours": 0.012514161268870035, "end": 1794105318.8944726, "est_h": 0.0, "resource": "cpu"}
+{"id": "audit__inversion__eps1", "rc": 0, "hours": 0.7673627675904168, "end": 1794108036.301862, "est_h": 1.5, "resource": "gpu"}
+{"id": "audit__inversion__eps3", "rc": 0, "hours": 0.7381537628836102, "end": 1794110693.699881, "est_h": 1.5, "resource": "gpu"}
+{"id": "audit__inversion__eps8", "rc": 0, "hours": 0.7381653250588311, "end": 1794113351.1364057, "est_h": 1.5, "resource": "gpu"}
+{"id": "audit__inversion__epsinf", "rc": 0, "hours": 0.738115414513482, "end": 1794116008.407868, "est_h": 1.5, "resource": "gpu"}

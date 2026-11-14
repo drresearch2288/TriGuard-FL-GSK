@@ -1,0 +1,4 @@
+Setting,Balanced acc. (%),Coverage (α=0.10),Set size
+"B6 FFA-LoRA + DP, ISIC thresholds",39.8,0.948,4.55
+"TriGuard-FL (proposed), ISIC thresholds",39.4,0.936,4.63
+TriGuard-FL (proposed) + 200-image private recalibration,39.4,1.000,6.00

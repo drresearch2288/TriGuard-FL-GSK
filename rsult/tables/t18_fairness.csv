@@ -1,0 +1,15 @@
+ε,Attribute,Subgroup,BA,Coverage
+∞,sex,female,64.3,0.953
+∞,sex,male,65.9,0.952
+∞,sex,Largest gap,1.6,0.001
+∞,age,40-60,66.1,0.945
+∞,age,<40,64.6,0.964
+∞,age,>60,62.7,0.956
+∞,age,Largest gap,3.4,0.019
+3,sex,female,41.2,0.944
+3,sex,male,41.3,0.943
+3,sex,Largest gap,0.1,0.002
+3,age,40-60,38.2,0.942
+3,age,<40,30.8,0.937
+3,age,>60,42.3,0.948
+3,age,Largest gap,11.5,0.011

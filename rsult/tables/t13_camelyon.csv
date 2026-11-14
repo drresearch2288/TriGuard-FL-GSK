@@ -1,0 +1,5 @@
+Method (ε=3),Center 1 (val) BA,Center 2 (unseen test) BA,Coverage on center 2,Set size
+B3 DP-FedAvg full FT (ResNet-18),87.7 (n=1),89.1 (n=1),0.930,1.21
+B4 DP linear probe,80.1 (n=1),89.9 (n=1),0.957,1.29
+B6 FFA-LoRA + DP,84.5 (n=1),92.7 (n=1),0.951,1.18
+TriGuard-FL (proposed),86.2 (n=1),93.6 (n=1),0.944,1.12
