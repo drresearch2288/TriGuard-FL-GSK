@@ -1,0 +1,390 @@
+"""Run part of the job queue on free cloud GPUs (Kaggle; the same worker script also runs on Colab).
+
+    python -m triguard.remote plan   lira --hours 20        # show which jobs would be sent
+    python -m triguard.remote push   lira --hours 20 --name w1   # claim them + start a Kaggle GPU session
+    python -m triguard.remote status w1
+    python -m triguard.remote pull   w1                      # import finished jobs; unfinished go back to the queue
+    python -m triguard.remote release w1                     # give claimed jobs back without importing
+
+A worker is one self-contained script (code embedded as base64): it downloads the data on Kaggle's fast
+network, rebuilds the same feature caches, then runs the claimed jobs on every GPU it has, in parallel,
+stopping before the 12 h session limit. Results land in /kaggle/working/runs/<job id>/ exactly as locally.
+"""
+from __future__ import annotations
+
+import argparse
+import base64
+import io
+import json
+import os
+import shutil
+import subprocess
+import sys
+import time
+import zipfile
+from pathlib import Path
+
+from triguard.paths import CACHE, ROOT, RUNS
+
+BUILD = ROOT / "build" / "remote"
+GROUPS = {  # job-id prefixes per offloadable group
+    "lira": ["lira__"],
+    "ablations": ["isic2019__a"],
+    "medmnist": ["pathmnist__", "bloodmnist__", "organamnist__", "octmnist__", "pneumoniamnist__", "retinamnist__"],
+    "camelyon": ["prep__camelyon17", "cache__camelyon17", "camelyon17__"],
+    "canary": ["audit__canary__"],
+    "b3": ["isic2019__b3_resnet", "camelyon17__b3_resnet", "pathmnist__b3_resnet", "bloodmnist__b3_resnet",
+           "organamnist__b3_resnet", "octmnist__b3_resnet", "pneumoniamnist__b3_resnet", "retinamnist__b3_resnet"],
+    "main": ["isic2019__b", "isic2019__triguard__"],  # main Fed-ISIC2019 table (laptop takes these too)
+    "tune": ["tune__", "tune2__"],  # whole hyper-parameter search chain incl. the CPU 'select' steps
+}
+DATASETS = {"camelyon": ["arinaromashkina/wilds-camelyon17-v1"], "b3": ["arinaromashkina/wilds-camelyon17-v1"]}  # attached to the Kaggle session; verified by the worker
+T4_SPEEDUP = 2.7  # per T4 vs this laptop (measured: 0.29 h per 30-round proxy run on T4, ~570 vs ~206 view-passes/s)
+
+
+def jobs():
+    return json.loads((RUNS / "jobs.json").read_text())
+
+
+def _state(jid):
+    d = RUNS / jid
+    if (d / "DONE").exists():
+        return "done"
+    if (d / "RUNNING").exists():
+        return "running"
+    if (d / "REMOTE").exists():
+        return "remote"
+    return "pending"
+
+
+def _ratio():
+    hist = [json.loads(l) for l in (RUNS / "history.jsonl").read_text().splitlines() if l.strip()] \
+        if (RUNS / "history.jsonl").exists() else []
+    tr = [h for h in hist if h["rc"] == 0 and h.get("resource") == "gpu" and h.get("est_h", 0) > 0.2
+          and not h["id"].startswith("cache__")]
+    return sum(h["hours"] for h in tr) / sum(h["est_h"] for h in tr) if tr else 1.0
+
+
+def select(group: str, hours: float, n_gpu: int = 2, exclude: str | None = None):
+    """Greedy pick of pending GPU jobs in `group` that fit `hours` of session time on n_gpu GPUs."""
+    J = jobs()
+    r = _ratio() / T4_SPEEDUP
+    pre = [p for g in group.split("+") for p in GROUPS[g]]  # "lira+ablations" combines groups
+    cand = sorted((j for j in J.values() if j["resource"] in ("gpu", "cpu") and j["kind"] != "alias" and any(j["id"].startswith(p) for p in pre)
+                   and _state(j["id"]) == "pending" and not (exclude and exclude in j["id"])), key=lambda j: (j["priority"], j["id"]))
+    lanes = [0.0] * n_gpu
+    out = []
+    for j in cand:
+        h = j["est_h"] * r
+        k = min(range(n_gpu), key=lambda i: lanes[i])
+        if lanes[k] + h > hours:
+            continue
+        lanes[k] += h
+        out.append(j["id"])
+    return out, max(lanes) if lanes else 0.0
+
+
+def prerequisites(targets: list[str]) -> list[str]:
+    """Data / cache jobs the targets need (they are re-run on the worker); tuning results are shipped as files."""
+    J = jobs()
+    need, stack = [], list(targets)
+    seen = set()
+    while stack:
+        jid = stack.pop()
+        for d in J[jid]["deps"]:
+            if d in seen or d not in J:
+                continue
+            seen.add(d)
+            if J[d]["kind"] in ("download", "prepare", "cache"):
+                need.append(d)
+                stack.append(d)
+    order = {"download": 0, "prepare": 1, "cache": 2}
+    return sorted(set(need), key=lambda d: (order[J[d]["kind"]], J[d]["priority"], d))
+
+
+def code_zip_b64() -> str:
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:
+        for p in list((ROOT / "triguard").rglob("*.py")) + [ROOT / "scripts" / "download_all.py", ROOT / "scripts" / "__init__.py"]:
+            z.write(p, p.relative_to(ROOT).as_posix())
+    return base64.b64encode(buf.getvalue()).decode()
+
+
+WORKER = r'''# TriGuard-FL remote worker (generated by triguard.remote — do not edit)
+import base64, io, json, os, shutil, subprocess, sys, threading, time, zipfile, urllib.request
+T0 = time.time()
+NAME = __NAME__
+TARGETS = __TARGETS__
+PREREQ = __PREREQ__
+JOBS = json.loads(r"""__JOBS__""")  # via json: job specs contain Infinity (eps = inf)
+FILES = json.loads(r"""__FILES__""")
+BUDGET_H = __BUDGET__
+CODE = "__CODE__"
+FLAMBY_COMMIT = "edacf54d5211520583b0133d55ac39b6fda8324b"  # pinned, same as scripts/setup
+
+OUT = "/kaggle/working" if os.path.isdir("/kaggle/working") else os.path.abspath("triguard_out")
+WORK = "/kaggle/tmp/tg" if os.path.isdir("/kaggle") else os.path.abspath("triguard_work")
+ROOT = os.path.join(WORK, "code")
+os.makedirs(ROOT, exist_ok=True)
+zipfile.ZipFile(io.BytesIO(base64.b64decode(CODE))).extractall(ROOT)
+RUNS = os.path.join(OUT, "runs")
+env = dict(os.environ, PYTHONPATH=ROOT, PYTHONUNBUFFERED="1", TRIGUARD_RUNS=RUNS,
+           TRIGUARD_DATA=os.path.join(WORK, "data"), TRIGUARD_CACHE=os.path.join(WORK, "cache"),
+           PYTORCH_CUDA_ALLOC_CONF="expandable_segments:True")
+os.makedirs(RUNS, exist_ok=True)
+for rel, txt in FILES.items():
+    p = os.path.join(OUT, rel); os.makedirs(os.path.dirname(p), exist_ok=True); open(p, "w").write(txt)
+json.dump(JOBS, open(os.path.join(RUNS, "jobs.json"), "w"))
+
+def log(m):
+    line = f"[{time.strftime('%H:%M:%S')} +{(time.time()-T0)/3600:.2f}h] {m}"
+    print(line, flush=True)
+    open(os.path.join(OUT, "worker.log"), "a").write(line + "\n")
+
+def sh(cmd):
+    log("$ " + cmd); subprocess.run(cmd, shell=True, check=False)
+
+if os.environ.get("TRIGUARD_WORKER_DRY"):  # local smoke test of the generated script
+    print("dry ok", len(TARGETS), len(PREREQ), len(JOBS), list(FILES)); sys.exit(0)
+sh(f"{sys.executable} -m pip install -q opacus==1.6.0 opt_einsum==3.4.0 --no-deps")
+for pkg in ["timm", "remotezip", "imagehash", "lpips", "pytorch-msssim", "open_clip_torch", "medmnist", "wilds"]:
+    sh(f"{sys.executable} -m pip install -q {pkg}")  # one by one: a failing optional package must not block the rest
+fl = os.path.join(ROOT, "third_party/FLamby/flamby/datasets/fed_isic2019")
+os.makedirs(os.path.join(fl, "dataset_creation_scripts"), exist_ok=True)
+base = "https://raw.githubusercontent.com/owkin/FLamby/" + FLAMBY_COMMIT + "/flamby/datasets/fed_isic2019/"
+for rel in ["dataset_creation_scripts/train_test_split", "HAM10000_metadata"]:
+    urllib.request.urlretrieve(base + rel, os.path.join(fl, rel))
+
+def run_job(jid, gpu=None):
+    d = os.path.join(RUNS, jid); os.makedirs(d, exist_ok=True)
+    if os.path.exists(os.path.join(d, "DONE")):
+        return True
+    e = dict(env)
+    if gpu is not None:
+        e["CUDA_VISIBLE_DEVICES"] = str(gpu)
+    t = time.time()
+    with open(os.path.join(d, "stdout.log"), "a") as f:
+        rc = subprocess.run([sys.executable, "-m", "triguard.jobrun", jid], cwd=ROOT, env=e, stdout=f,
+                            stderr=subprocess.STDOUT).returncode
+    hrs = (time.time() - t) / 3600
+    if rc == 0:
+        open(os.path.join(d, "DONE"), "w").write(time.ctime())
+        json.dump({"hours": hrs, "gpu": torch_name}, open(os.path.join(d, "REMOTE_INFO.json"), "w"))
+    log(f"{'done' if rc == 0 else 'FAILED'} {jid} on gpu {gpu} in {hrs:.2f} h")
+    return rc == 0
+
+import torch
+n_gpu = max(1, torch.cuda.device_count())
+torch_name = torch.cuda.get_device_name(0) if torch.cuda.is_available() else "cpu"
+log(f"worker {NAME}: {len(TARGETS)} jobs, {n_gpu} x {torch_name}")
+for jid in PREREQ:
+    run_job(jid, 0)
+
+todo = list(TARGETS)
+lock = threading.Lock()
+times = []
+
+failed = set()
+
+def ready(jid):  # dependencies inside this batch must be DONE first (e.g. tuning grid -> select -> rank runs)
+    return all(os.path.exists(os.path.join(RUNS, d, "DONE")) for d in JOBS[jid]["deps"] if d in TARGETS)
+
+def blocked(jid):
+    return any(d in failed for d in JOBS[jid]["deps"] if d in TARGETS)
+
+def lane(g):
+    while True:
+        with lock:
+            for j in [j for j in todo if blocked(j)]:
+                todo.remove(j); failed.add(j)
+            if not todo:
+                return
+            left = BUDGET_H - (time.time() - T0) / 3600
+            avg = (sum(times) / len(times)) if times else 0.0
+            if avg and left < avg * 1.1:
+                log(f"gpu {g}: {left:.2f} h left < next job (~{avg:.2f} h): stopping")
+                return
+            jid = next((j for j in todo if ready(j)), None)
+            if jid is not None:
+                todo.remove(jid)
+        if jid is None:
+            time.sleep(20)
+            continue
+        t = time.time()
+        ok = run_job(jid, g)
+        with lock:
+            if ok:
+                if JOBS[jid]["resource"] == "gpu":
+                    times.append((time.time() - t) / 3600)
+            else:
+                failed.add(jid)
+
+th = [threading.Thread(target=lane, args=(g,)) for g in range(n_gpu)]
+[t.start() for t in th]; [t.join() for t in th]
+for root, _, files in os.walk(RUNS):  # keep the output small: no checkpoints / masks
+    for fn in files:
+        if fn in ("checkpoint.pt", "train_mask.npy"):
+            os.remove(os.path.join(root, fn))
+for j in TARGETS:  # the local evaluation needs the dataset table of caches built here
+    if j.startswith("cache__") and os.path.exists(os.path.join(RUNS, j, "DONE")):
+        for fn in ("index.csv", "meta.json"):
+            shutil.copy2(os.path.join(WORK, "cache", j[len("cache__"):], fn), os.path.join(RUNS, j, fn))
+done = [j for j in TARGETS if os.path.exists(os.path.join(RUNS, j, "DONE"))]
+json.dump({"name": NAME, "done": done, "not_done": [j for j in TARGETS if j not in done], "gpu": torch_name,
+           "n_gpu": n_gpu, "hours": (time.time() - T0) / 3600}, open(os.path.join(OUT, "remote_summary.json"), "w"))
+log(f"finished: {len(done)}/{len(TARGETS)} jobs done")
+'''
+
+
+def build_worker(name: str, targets: list[str], budget_h: float = 11.3) -> Path:
+    J = jobs()
+    pre = prerequisites(targets)
+    sub = {k: J[k] for k in targets + pre}
+    files = {}
+    for stage in ("tune__select", "tune__select_cl"):
+        f = RUNS / stage / "best.json"
+        if f.exists():
+            files[f"runs/{stage}/best.json"] = f.read_text()
+            files[f"runs/{stage}/DONE"] = "remote copy"
+    # audits / transfers that read other runs need them shipped too (inversion -> source model)
+    for t in targets:
+        for d in J[t]["deps"]:
+            if d in J and J[d]["kind"] == "train" and d not in targets and (RUNS / d / "DONE").exists():
+                for fn in ("train_result.json", "eval_result.json"):
+                    if (RUNS / d / fn).exists():
+                        files[f"runs/{d}/{fn}"] = (RUNS / d / fn).read_text()
+                files[f"runs/{d}/DONE"] = "remote copy"
+    src = (WORKER.replace("__NAME__", repr(name)).replace("__TARGETS__", json.dumps(targets))
+           .replace("__PREREQ__", json.dumps(pre)).replace("__JOBS__", json.dumps(sub))
+           .replace("__FILES__", json.dumps(files)).replace("__BUDGET__", str(budget_h))
+           .replace("__CODE__", code_zip_b64()))
+    out = BUILD / name
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "worker.py").write_text(src, encoding="utf-8")
+    return out
+
+
+KAGGLE_USERNAME = os.environ.get("KAGGLE_USERNAME", "indirani19")  # public profile name, not a secret; set yours for an access_token login
+
+
+def kaggle_user() -> str:
+    home = Path.home() / ".kaggle"
+    if (home / "kaggle.json").exists():
+        return json.loads((home / "kaggle.json").read_text())["username"]
+    if (home / "access_token").exists():  # new-style Kaggle access token
+        return KAGGLE_USERNAME
+    raise SystemExit(f"No Kaggle credential in {home} (expected access_token or kaggle.json).")
+
+
+def kaggle(*args, capture=True):
+    exe = Path(sys.executable).with_name("kaggle.exe")
+    cmd = [str(exe) if exe.exists() else "kaggle", *args]
+    return subprocess.run(cmd, capture_output=capture, text=True, encoding="utf-8", errors="replace")
+
+
+def push(group: str, hours: float, name: str, n_gpu: int = 2, dry: bool = False, exclude: str | None = None):
+    targets, span = select(group, hours, n_gpu, exclude)
+    if not targets:
+        raise SystemExit(f"no pending jobs in group {group!r}")
+    if any("tune__select" in jobs()[t]["deps"] for t in targets) and not (RUNS / "tune__select" / "best.json").exists():
+        raise SystemExit("hyper-parameter search has not finished yet (runs/tune__select/best.json missing)")
+    out = build_worker(name, targets, budget_h=11.3)
+    user = kaggle_user() if not dry else "you"
+    slug = f"triguard-{name}"
+    meta = {"id": f"{user}/{slug}", "title": slug, "code_file": "worker.py", "language": "python",
+            "kernel_type": "script", "is_private": True, "enable_gpu": True, "enable_internet": True,
+            "dataset_sources": [d for g in group.split("+") for d in DATASETS.get(g, [])], "competition_sources": [], "kernel_sources": [], "machine_shape": "NvidiaTeslaT4"}
+    (out / "kernel-metadata.json").write_text(json.dumps(meta, indent=1))
+    print(f"{len(targets)} jobs (~{span:.1f} h per GPU lane): {targets}")
+    if dry:
+        return out
+    r = kaggle("kernels", "push", "-p", str(out))
+    print(r.stdout, r.stderr)
+    if r.returncode != 0:
+        raise SystemExit("push failed; nothing claimed")
+    for jid in targets:
+        (RUNS / jid).mkdir(parents=True, exist_ok=True)
+        (RUNS / jid / "REMOTE").write_text(json.dumps({"worker": name, "slug": f"{user}/{slug}", "time": time.time()}))
+    (BUILD / name / "claimed.json").write_text(json.dumps({"slug": f"{user}/{slug}", "targets": targets}))
+    print(f"claimed {len(targets)} jobs for {user}/{slug}")
+
+
+def status(name: str):
+    c = json.loads((BUILD / name / "claimed.json").read_text())
+    r = kaggle("kernels", "status", c["slug"])
+    print(r.stdout.strip() or r.stderr.strip())
+    return r.stdout
+
+
+def pull(name: str, force: bool = False):
+    c = json.loads((BUILD / name / "claimed.json").read_text())
+    st = status(name)
+    if not force and not any(w in st.lower() for w in ("complete", "error", "cancel")):
+        raise SystemExit(f"worker not finished, or status unknown ({st[-80:]!r}); pull later (or --force)")
+    dl = BUILD / name / "output"
+    shutil.rmtree(dl, ignore_errors=True)
+    dl.mkdir(parents=True)
+    r = kaggle("kernels", "output", c["slug"], "-p", str(dl))
+    print(r.stdout[-500:], r.stderr[-500:])
+    imported = import_dir(dl, c["targets"])
+    print(f"imported {len(imported)}/{len(c['targets'])}; the rest went back to the local queue")
+
+
+def import_dir(dl: Path, targets: list[str]):
+    runs = dl / "runs" if (dl / "runs").exists() else dl
+    imported = []
+    for jid in targets:
+        src = runs / jid
+        dst = RUNS / jid
+        if (src / "DONE").exists():
+            shutil.rmtree(dst, ignore_errors=True)
+            shutil.copytree(src, dst)
+            (dst / "REMOTE").unlink(missing_ok=True)
+            if jid.startswith("cache__"):
+                idx = CACHE / jid[len("cache__"):]
+                idx.mkdir(parents=True, exist_ok=True)
+                for fn in ("index.csv", "meta.json"):
+                    shutil.copy2(dst / fn, idx / fn)
+                (idx / "DONE").write_text("index only: features stayed on the Kaggle worker")
+            info = json.loads((src / "REMOTE_INFO.json").read_text()) if (src / "REMOTE_INFO.json").exists() else {}
+            with open(RUNS / "history.jsonl", "a") as f:
+                f.write(json.dumps({"id": jid, "rc": 0, "hours": info.get("hours", 0), "end": time.time(),
+                                    "est_h": jobs()[jid]["est_h"], "resource": "remote", "gpu": info.get("gpu")}) + "\n")
+            imported.append(jid)
+        else:
+            (dst / "REMOTE").unlink(missing_ok=True)  # back to the local queue
+    return imported
+
+
+def release(name: str):
+    c = json.loads((BUILD / name / "claimed.json").read_text())
+    for jid in c["targets"]:
+        (RUNS / jid / "REMOTE").unlink(missing_ok=True)
+    print(f"released {len(c['targets'])} jobs")
+
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser()
+    ap.add_argument("cmd", choices=["plan", "push", "status", "pull", "release", "build"])
+    ap.add_argument("arg", nargs="?")
+    ap.add_argument("--hours", type=float, default=10.5)
+    ap.add_argument("--name", default=None)
+    ap.add_argument("--gpus", type=int, default=2)
+    ap.add_argument("--force", action="store_true")
+    ap.add_argument("--exclude", default=None, help="skip jobs whose id contains this text")
+    a = ap.parse_args()
+    if a.cmd == "plan":
+        t, span = select(a.arg, a.hours, a.gpus, a.exclude)
+        print(f"{len(t)} jobs, ~{span:.1f} h per GPU lane:", *t, sep="\n  ")
+        print("prerequisites rebuilt on the worker:", prerequisites(t) if t else [])
+    elif a.cmd == "build":
+        t, _ = select(a.arg, a.hours, a.gpus)
+        print(build_worker(a.name or "test", t))
+    elif a.cmd == "push":
+        push(a.arg, a.hours, a.name or f"w{int(time.time()) % 100000}", a.gpus, exclude=a.exclude)
+    elif a.cmd == "status":
+        status(a.arg)
+    elif a.cmd == "pull":
+        pull(a.arg, a.force)
+    elif a.cmd == "release":
+        release(a.arg)
