@@ -1,0 +1,17 @@
+{
+  "source": "isic2019__triguard__eps3__s0",
+  "eps": 3.0,
+  "bacc": 0.39411218696770917,
+  "n_test": 2098,
+  "isic_thresholds": {
+    "coverage": 0.9355815061963775,
+    "set_size": 4.6250476644423255,
+    "singleton": 0.02040038131553861
+  },
+  "private_recalibration": {
+    "coverage": 1.0,
+    "set_size": 6.0,
+    "singleton": 0.0
+  },
+  "recal_n": 200
+}

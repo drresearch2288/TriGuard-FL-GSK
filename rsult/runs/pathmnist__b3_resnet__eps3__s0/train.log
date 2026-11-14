@@ -1,0 +1,26 @@
+[22:49:20] site 0: n=74 q=0.250 sigma=3.069 steps=200
+[22:49:24] site 1: n=120 q=0.250 sigma=3.252 steps=200
+[22:49:28] site 2: n=321 q=0.250 sigma=3.608 steps=200
+[22:49:31] site 3: n=280 q=0.250 sigma=3.560 steps=200
+[22:49:35] site 4: n=280 q=0.250 sigma=3.560 steps=200
+[22:49:38] site 5: n=151 q=0.250 sigma=3.340 steps=200
+[22:49:41] site 6: n=602 q=0.250 sigma=3.828 steps=200
+[22:49:44] site 7: n=461 q=0.250 sigma=3.735 steps=200
+[22:49:47] site 8: n=117 q=0.250 sigma=3.242 steps=200
+[22:49:51] site 9: n=118 q=0.250 sigma=3.247 steps=200
+[22:49:55] site 10: n=352 q=0.250 sigma=3.643 steps=200
+[22:49:58] site 11: n=281 q=0.250 sigma=3.564 steps=200
+[22:50:02] site 12: n=323 q=0.250 sigma=3.613 steps=200
+[22:50:06] site 13: n=175 q=0.250 sigma=3.394 steps=200
+[22:50:08] site 14: n=274 q=0.250 sigma=3.555 steps=200
+[22:50:13] site 15: n=99 q=0.250 sigma=3.181 steps=200
+[22:50:16] site 16: n=137 q=0.250 sigma=3.301 steps=200
+[22:50:20] site 17: n=217 q=0.250 sigma=3.472 steps=200
+[22:50:24] site 18: n=173 q=0.250 sigma=3.389 steps=200
+[22:50:27] site 19: n=242 q=0.250 sigma=3.511 steps=200
+[22:56:41] round 10/50 373s
+[23:02:50] round 20/50 743s
+[23:08:57] round 30/50 1109s
+[23:15:03] round 40/50 1475s
+[23:21:12] round 50/50 1844s
+[23:22:14] done mean BA 0.6426

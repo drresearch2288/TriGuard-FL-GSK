@@ -1,0 +1,17 @@
+{
+  "source": "isic2019__b6_ffalora__eps3__s0",
+  "eps": 3.0,
+  "bacc": 0.39772558817768,
+  "n_test": 2098,
+  "isic_thresholds": {
+    "coverage": 0.9482125834127743,
+    "set_size": 4.55276453765491,
+    "singleton": 0.014013346043851288
+  },
+  "private_recalibration": {
+    "coverage": 1.0,
+    "set_size": 6.0,
+    "singleton": 0.0
+  },
+  "recal_n": 200
+}
