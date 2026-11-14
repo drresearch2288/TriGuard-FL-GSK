@@ -1,0 +1,69 @@
+{
+  "clip": 0.5,
+  "lr": 0.001,
+  "table": [
+    {
+      "run": "tune__C0.5_lr0.001_r8",
+      "bacc": 0.5,
+      "clip": 0.5,
+      "lr": 0.001,
+      "rank": 8
+    },
+    {
+      "run": "tune__C0.5_lr0.002_r8",
+      "bacc": 0.5,
+      "clip": 0.5,
+      "lr": 0.002,
+      "rank": 8
+    },
+    {
+      "run": "tune__C0.5_lr0.005_r8",
+      "bacc": 0.5,
+      "clip": 0.5,
+      "lr": 0.005,
+      "rank": 8
+    },
+    {
+      "run": "tune__C1.0_lr0.001_r8",
+      "bacc": 0.5,
+      "clip": 1.0,
+      "lr": 0.001,
+      "rank": 8
+    },
+    {
+      "run": "tune__C1.0_lr0.002_r8",
+      "bacc": 0.5,
+      "clip": 1.0,
+      "lr": 0.002,
+      "rank": 8
+    },
+    {
+      "run": "tune__C1.0_lr0.005_r8",
+      "bacc": 0.5,
+      "clip": 1.0,
+      "lr": 0.005,
+      "rank": 8
+    },
+    {
+      "run": "tune__C2.0_lr0.001_r8",
+      "bacc": 0.5,
+      "clip": 2.0,
+      "lr": 0.001,
+      "rank": 8
+    },
+    {
+      "run": "tune__C2.0_lr0.002_r8",
+      "bacc": 0.5,
+      "clip": 2.0,
+      "lr": 0.002,
+      "rank": 8
+    },
+    {
+      "run": "tune__C2.0_lr0.005_r8",
+      "bacc": 0.5,
+      "clip": 2.0,
+      "lr": 0.005,
+      "rank": 8
+    }
+  ]
+}
