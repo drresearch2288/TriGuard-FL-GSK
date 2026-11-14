@@ -1,0 +1,30 @@
+[17:47:01 +0.00h] $ /usr/bin/python3 -m pip install -q opacus opt_einsum --no-deps
+[17:47:03 +0.00h] $ /usr/bin/python3 -m pip install -q timm
+[17:47:06 +0.00h] $ /usr/bin/python3 -m pip install -q remotezip
+[17:47:08 +0.00h] $ /usr/bin/python3 -m pip install -q imagehash
+[17:47:09 +0.00h] $ /usr/bin/python3 -m pip install -q lpips
+[17:47:11 +0.00h] $ /usr/bin/python3 -m pip install -q pytorch-msssim
+[17:47:13 +0.00h] $ /usr/bin/python3 -m pip install -q open_clip_torch
+[17:47:16 +0.00h] $ /usr/bin/python3 -m pip install -q medmnist
+[17:47:18 +0.00h] $ /usr/bin/python3 -m pip install -q wilds
+[17:47:28 +0.01h] worker tune1: 13 jobs, 2 x Tesla T4
+[17:50:17 +0.05h] done dl__isic2019 on gpu 0 in 0.05 h
+[17:51:00 +0.07h] done dl__backbones on gpu 0 in 0.01 h
+[18:04:34 +0.29h] done dl__isic2020 on gpu 0 in 0.23 h
+[18:07:47 +0.35h] done prep__isic2019 on gpu 0 in 0.05 h
+[18:29:51 +0.71h] done prep__isic2020 on gpu 0 in 0.37 h
+[18:31:08 +0.74h] done cache__isic2020__dinov2_vits14 on gpu 0 in 0.02 h
+[18:48:26 +1.02h] done tune__C0.5_lr0.002_r8 on gpu 1 in 0.29 h
+[18:48:48 +1.03h] done tune__C0.5_lr0.001_r8 on gpu 0 in 0.29 h
+[19:05:42 +1.31h] done tune__C0.5_lr0.005_r8 on gpu 1 in 0.29 h
+[19:06:31 +1.33h] done tune__C1.0_lr0.001_r8 on gpu 0 in 0.30 h
+[19:22:59 +1.60h] done tune__C1.0_lr0.002_r8 on gpu 1 in 0.29 h
+[19:24:11 +1.62h] done tune__C1.0_lr0.005_r8 on gpu 0 in 0.29 h
+[19:40:19 +1.89h] done tune__C2.0_lr0.001_r8 on gpu 1 in 0.29 h
+[19:41:54 +1.91h] done tune__C2.0_lr0.002_r8 on gpu 0 in 0.30 h
+[19:57:33 +2.18h] done tune__C2.0_lr0.005_r8 on gpu 1 in 0.29 h
+[19:57:35 +2.18h] done tune__select_cl on gpu 1 in 0.00 h
+[20:14:57 +2.47h] done tune__rank16 on gpu 1 in 0.29 h
+[20:15:38 +2.48h] done tune__rank4 on gpu 0 in 0.30 h
+[20:15:40 +2.48h] done tune__select on gpu 0 in 0.00 h
+[20:15:57 +2.48h] finished: 13/13 jobs done

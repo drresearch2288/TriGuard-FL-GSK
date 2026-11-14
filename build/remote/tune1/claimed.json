@@ -1,0 +1,1 @@
+{"slug": "indirani19/triguard-tune1", "targets": ["tune__C0.5_lr0.001_r8", "tune__C0.5_lr0.002_r8", "tune__C0.5_lr0.005_r8", "tune__C1.0_lr0.001_r8", "tune__C1.0_lr0.002_r8", "tune__C1.0_lr0.005_r8", "tune__C2.0_lr0.001_r8", "tune__C2.0_lr0.002_r8", "tune__C2.0_lr0.005_r8", "tune__select_cl", "tune__rank16", "tune__rank4", "tune__select"]}
